@@ -21,6 +21,14 @@ def getTellRaw(message, colour="white"):
     return 'tellraw @a {"text": "%s", "color": "%s"}' % (message, colour)
 
 
+def getTitle(message, colour="white", location="title"):
+    return 'title @a %s {"text": "%s", "color": "%s"}' % (location, message, colour)
+
+
+def getSubtitle(message, colour="white", location="subtitle"):
+    return 'title @a %s {"text": "%s", "color": "%s"}' % (location, message, colour)
+
+
 print("Running")
 
 text = ""
